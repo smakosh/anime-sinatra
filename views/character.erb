@@ -5,4 +5,8 @@
   <p><%= @content %></p>
 
   <a href="/edit/<%= @title %>">Edit page</a>
+  <form method="post" action="/<%= @title %>">
+    <input type="hidden" name="_method" value="delete" />
+    <button type="submit">Delete page</button>
+  </form>
 </div>
